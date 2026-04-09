@@ -156,13 +156,7 @@ export default function Home() {
         >
           We publish rarely and write only when we have something worth saying.
         </p>
-        <a
-          href="mailto:info@edubapress.com"
-          className="text-xs uppercase font-light transition-colors"
-          style={{ letterSpacing: '0.12em', color: '#F0E8D6' }}
-        >
-          info@edubapress.com →
-        </a>
+
       </section>
     </>
   )
