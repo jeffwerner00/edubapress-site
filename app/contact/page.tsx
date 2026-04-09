@@ -11,7 +11,7 @@ const CONTACTS = [
 export default function ContactPage() {
   return (
     <>
-      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl">
+      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl mx-auto">
         <p className="text-xs uppercase mb-4 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           Contact
         </p>
@@ -25,7 +25,7 @@ export default function ContactPage() {
 
       <hr className="section-rule" />
 
-      <section className="px-6 md:px-12 py-16 max-w-2xl space-y-12">
+      <section className="px-6 md:px-12 py-16 max-w-2xl mx-auto space-y-12">
         {CONTACTS.map((c, i) => (
           <div key={c.label}>
             {i > 0 && <hr className="section-rule mb-12" />}
@@ -34,20 +34,18 @@ export default function ContactPage() {
             </p>
             <a
               href={`mailto:${c.email}`}
-              className="font-light text-xl transition-colors"
+              className="font-light text-xl transition-colors hover:text-gold"
               style={{ ...serif, letterSpacing: '0.03em', color: '#F0E8D6' }}
             >
               {c.email}
             </a>
           </div>
         ))}
-
-
       </section>
 
       <hr className="section-rule" />
 
-      <section className="px-6 md:px-12 py-14 max-w-xl">
+      <section className="px-6 md:px-12 py-14 max-w-xl mx-auto">
         <p
           className="font-light text-lg leading-relaxed"
           style={{ ...serif, letterSpacing: '0.01em', color: '#C8BC9A' }}

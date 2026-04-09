@@ -28,7 +28,7 @@ const RIGHTS_SECTIONS = [
 export default function RightsPage() {
   return (
     <>
-      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl">
+      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl mx-auto">
         <p className="text-xs uppercase mb-4 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           Rights
         </p>
@@ -42,7 +42,7 @@ export default function RightsPage() {
 
       <hr className="section-rule" />
 
-      <section className="px-6 md:px-12 py-14 max-w-2xl">
+      <section className="px-6 md:px-12 py-14 max-w-2xl mx-auto">
         <p
           className="font-light text-lg md:text-xl leading-relaxed"
           style={{ ...serif, letterSpacing: '0.01em', color: '#C8BC9A' }}
@@ -54,7 +54,7 @@ export default function RightsPage() {
 
       <hr className="section-rule" />
 
-      <section className="px-6 md:px-12 py-16 max-w-2xl space-y-14">
+      <section className="px-6 md:px-12 py-16 max-w-2xl mx-auto space-y-14">
         {RIGHTS_SECTIONS.map((s, i) => (
           <div key={s.title}>
             {i > 0 && <hr className="section-rule mb-14" />}

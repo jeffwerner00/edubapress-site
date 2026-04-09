@@ -5,7 +5,7 @@ const serif = { fontFamily: 'var(--font-cormorant), Georgia, serif' }
 export default function AboutPage() {
   return (
     <>
-      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl">
+      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl mx-auto">
         <p className="text-xs uppercase mb-4 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           About
         </p>
@@ -19,7 +19,8 @@ export default function AboutPage() {
 
       <hr className="section-rule" />
 
-      <section className="px-6 md:px-12 py-16 md:py-20 max-w-2xl">
+      {/* The Name */}
+      <section className="px-6 md:px-12 py-16 md:py-20 max-w-2xl mx-auto">
         <p className="text-xs uppercase mb-8 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           The Name
         </p>
@@ -45,7 +46,8 @@ export default function AboutPage() {
 
       <hr className="section-rule" />
 
-      <section className="px-6 md:px-12 py-16 md:py-20 max-w-2xl">
+      {/* What We Publish */}
+      <section className="px-6 md:px-12 py-16 md:py-20 max-w-2xl mx-auto">
         <p className="text-xs uppercase mb-8 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           What We Publish
         </p>
@@ -54,9 +56,10 @@ export default function AboutPage() {
           style={{ ...serif, letterSpacing: '0.01em', color: '#C8BC9A' }}
         >
           <p>
-            Eduba Press specializes in historical fiction operating at civilizational scale —
-            stories set at the hinge points of human history, where the choices made by individuals
-            shaped everything that came after.
+            Eduba Press publishes historical fiction that operates at civilizational scale — stories
+            set at the hinge points of human history, where the choices made by individuals reshaped
+            the world that followed. We are drawn to work that takes the past seriously as drama,
+            not backdrop. To stories where scope is earned, not assumed.
           </p>
           <p>
             Our flagship series,{' '}
@@ -69,7 +72,8 @@ export default function AboutPage() {
 
       <hr className="section-rule" />
 
-      <section className="px-6 md:px-12 py-16 md:py-20 max-w-2xl">
+      {/* Who We Are */}
+      <section className="px-6 md:px-12 py-16 md:py-20 max-w-2xl mx-auto">
         <p className="text-xs uppercase mb-8 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           Who We Are
         </p>
@@ -78,8 +82,10 @@ export default function AboutPage() {
           style={{ ...serif, letterSpacing: '0.01em', color: '#C8BC9A' }}
         >
           <p>
-            Eduba Press is an independent imprint. We are small by design and serious by conviction.
-            We do not publish quickly. We publish carefully.
+            Eduba Press is an independent imprint built on a clear editorial conviction: the stories
+            that matter most are the ones that reach back far enough to show us where we came from.
+            We are small by design and serious by conviction. We do not publish quickly. We publish
+            carefully. We are looking for the work that belongs here.
           </p>
           <p>We are based in the United States.</p>
         </div>
