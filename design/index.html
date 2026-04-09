@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduba Press</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: '#1A1A1A',
+            'warm-dark': '#141210',
+            cream: '#F0E8D6',
+            'cream-dim': '#C8BC9A',
+            terracotta: '#B85C38',
+            gold: '#C9A84C',
+            rule: '#2A2520',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #141210; }
+
+    /* Eduba mark SVG inline helper */
+    .mark-cream { color: #F0E8D6; }
+    .mark-gold  { color: #C9A84C; }
+
+    /* Nav rule */
+    .nav-rule { border-bottom: 1px solid #2A2520; }
+
+    /* Hero divider */
+    .hero-rule { border-color: #2A2520; }
+
+    /* Subtle grain texture via pseudo */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    * { position: relative; z-index: 1; }
+
+    /* Tracking utilities */
+    .tracking-widest-plus { letter-spacing: 0.3em; }
+    .tracking-title { letter-spacing: 0.22em; }
+
+    hr.section-rule {
+      border: none;
+      border-top: 1px solid #2A2520;
+    }
+  </style>
+</head>
+<body class="text-cream font-sans font-light antialiased">
+
+  <!-- ─────────────────── NAV ─────────────────── -->
+  <nav class="nav-rule py-5 px-6 md:px-12 flex items-center justify-between">
+    <!-- Mark + wordmark -->
+    <a href="/" class="flex items-center gap-4 no-underline group">
+      <svg width="28" height="37" viewBox="0 0 64 84" fill="none" class="mark-cream flex-shrink-0" style="color:#F0E8D6">
+        <path d="M8 3H56Q61 3 61 8V72Q61 81 52 81H12Q3 81 3 72V8Q3 3 8 3Z" stroke="currentColor" stroke-width="2.5"/>
+        <rect x="13" y="22" width="26" height="3" fill="currentColor"/>
+        <polygon points="39,20.5 39,26.5 47,23.5" fill="currentColor"/>
+        <rect x="13" y="36" width="18" height="3" fill="currentColor"/>
+        <polygon points="31,34.5 31,40.5 39,37.5" fill="currentColor"/>
+        <rect x="20" y="50" width="19" height="3" fill="currentColor"/>
+        <polygon points="39,48.5 39,54.5 47,51.5" fill="currentColor"/>
+      </svg>
+      <span class="font-serif font-light text-xl tracking-widest-plus text-cream uppercase">Eduba Press</span>
+    </a>
+
+    <!-- Nav links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="/about" class="text-xs tracking-widest text-cream-dim hover:text-cream transition-colors uppercase">About</a>
+      <a href="/rights" class="text-xs tracking-widest text-cream-dim hover:text-cream transition-colors uppercase">Rights</a>
+      <a href="/press" class="text-xs tracking-widest text-cream-dim hover:text-cream transition-colors uppercase">Press</a>
+      <a href="/submissions" class="text-xs tracking-widest text-cream-dim hover:text-cream transition-colors uppercase">Submissions</a>
+      <a href="/contact" class="text-xs tracking-widest text-cream-dim hover:text-cream transition-colors uppercase">Contact</a>
+    </div>
+
+    <!-- Mobile menu placeholder -->
+    <button class="md:hidden text-cream-dim" aria-label="Menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+        <rect width="20" height="1.5" fill="currentColor"/>
+        <rect y="6" width="14" height="1.5" fill="currentColor"/>
+        <rect y="12" width="20" height="1.5" fill="currentColor"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ─────────────────── HERO ─────────────────── -->
+  <header class="px-6 md:px-12 pt-24 pb-20 md:pt-36 md:pb-28 text-center max-w-3xl mx-auto">
+
+    <!-- Mark centered large -->
+    <div class="flex justify-center mb-10">
+      <svg width="52" height="68" viewBox="0 0 64 84" fill="none" style="color:#C9A84C">
+        <path d="M8 3H56Q61 3 61 8V72Q61 81 52 81H12Q3 81 3 72V8Q3 3 8 3Z" stroke="currentColor" stroke-width="2"/>
+        <rect x="13" y="22" width="26" height="3" fill="currentColor"/>
+        <polygon points="39,20.5 39,26.5 47,23.5" fill="currentColor"/>
+        <rect x="13" y="36" width="18" height="3" fill="currentColor"/>
+        <polygon points="31,34.5 31,40.5 39,37.5" fill="currentColor"/>
+        <rect x="20" y="50" width="19" height="3" fill="currentColor"/>
+        <polygon points="39,48.5 39,54.5 47,51.5" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <p class="text-xs tracking-widest-plus uppercase text-gold mb-8 font-sans font-light">Eduba Press</p>
+
+    <h1 class="font-serif font-light text-4xl md:text-5xl lg:text-6xl text-cream leading-tight mb-7" style="letter-spacing:0.04em">
+      Stories from the foundation<br class="hidden md:block"> of civilization.
+    </h1>
+
+    <p class="text-sm md:text-base text-cream-dim leading-relaxed max-w-xl mx-auto font-light" style="letter-spacing:0.02em">
+      We publish work that reaches back — to the origins of cities,<br class="hidden md:block"> of gods, of the written word itself.
+    </p>
+
+  </header>
+
+  <hr class="section-rule mx-6 md:mx-12">
+
+  <!-- ─────────────────── FEATURED BOOK ─────────────────── -->
+  <section class="px-6 md:px-12 py-20 md:py-28 max-w-5xl mx-auto">
+
+    <p class="text-xs tracking-widest-plus uppercase text-gold mb-12 text-center font-sans">Now Available</p>
+
+    <div class="flex flex-col md:flex-row items-start gap-12 md:gap-16">
+
+      <!-- Book cover placeholder -->
+      <div class="flex-shrink-0 mx-auto md:mx-0">
+        <div class="w-48 md:w-56 bg-warm-dark border border-rule flex items-center justify-center" style="aspect-ratio:2/3; min-height:280px;">
+          <div class="text-center px-4">
+            <svg width="28" height="37" viewBox="0 0 64 84" fill="none" class="mx-auto mb-4" style="color:#C9A84C; opacity:0.4">
+              <path d="M8 3H56Q61 3 61 8V72Q61 81 52 81H12Q3 81 3 72V8Q3 3 8 3Z" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="13" y="22" width="26" height="3" fill="currentColor"/>
+              <polygon points="39,20.5 39,26.5 47,23.5" fill="currentColor"/>
+              <rect x="13" y="36" width="18" height="3" fill="currentColor"/>
+              <polygon points="31,34.5 31,40.5 39,37.5" fill="currentColor"/>
+              <rect x="20" y="50" width="19" height="3" fill="currentColor"/>
+              <polygon points="39,48.5 39,54.5 47,51.5" fill="currentColor"/>
+            </svg>
+            <p class="text-xs text-cream-dim opacity-40 tracking-widest uppercase">Cover</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book info -->
+      <div class="flex-1">
+        <p class="text-xs tracking-widest-plus uppercase text-gold mb-4 font-sans">The Here War · Book One</p>
+        <h2 class="font-serif font-light text-3xl md:text-4xl text-cream mb-2 leading-tight" style="letter-spacing:0.05em">The Temple of Transactions</h2>
+        <p class="text-sm text-cream-dim mb-8 font-sans font-light tracking-wide">Jeff Werner</p>
+
+        <p class="text-base text-cream-dim leading-relaxed mb-10 font-light" style="letter-spacing:0.015em; max-width:480px;">
+          Sumer, 2800 <span class="font-sans text-xs uppercase tracking-widest">bc</span>. In the world's first city, a young temple administrator discovers that the gods who rule human devotion are at war — and that the most powerful weapon in that war is a clay tablet.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="px-7 py-3 bg-terracotta text-cream text-xs tracking-widest uppercase font-sans hover:bg-opacity-90 transition-colors">
+            Order Now
+          </a>
+          <a href="#" class="px-7 py-3 border border-rule text-cream-dim text-xs tracking-widest uppercase font-sans hover:text-cream hover:border-cream-dim transition-colors">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-rule mx-6 md:mx-12">
+
+  <!-- ─────────────────── MISSION ─────────────────── -->
+  <section class="px-6 md:px-12 py-20 md:py-28 max-w-2xl mx-auto text-center">
+    <p class="font-serif font-light text-xl md:text-2xl text-cream leading-relaxed" style="letter-spacing:0.02em">
+      Eduba Press is an independent publisher committed to stories told at the scale of human history. We believe the past is not distant — it is the architecture everything else is built on.
+    </p>
+  </section>
+
+  <hr class="section-rule mx-6 md:mx-12">
+
+  <!-- ─────────────────── NEWSLETTER ─────────────────── -->
+  <section class="px-6 md:px-12 py-16 md:py-20 max-w-xl mx-auto text-center">
+    <p class="text-xs tracking-widest-plus uppercase text-gold mb-4 font-sans">Stay Informed</p>
+    <h3 class="font-serif font-light text-2xl text-cream mb-3" style="letter-spacing:0.06em">New releases, author notes,<br>and news from Eduba Press.</h3>
+    <p class="text-xs text-cream-dim mb-8 font-sans font-light leading-relaxed">
+      We publish rarely and write only when we have something worth saying.
+    </p>
+    <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <input
+        type="email"
+        placeholder="Your email address"
+        class="flex-1 px-5 py-3 bg-warm-dark border border-rule text-cream text-sm font-sans font-light placeholder-cream-dim focus:outline-none focus:border-cream-dim transition-colors"
+      >
+      <button type="submit" class="px-7 py-3 bg-cream text-charcoal text-xs tracking-widest uppercase font-sans hover:bg-cream-dim transition-colors whitespace-nowrap">
+        Subscribe
+      </button>
+    </form>
+  </section>
+
+  <!-- ─────────────────── FOOTER ─────────────────── -->
+  <footer class="border-t border-rule px-6 md:px-12 py-12 mt-8">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+
+      <!-- Stacked lockup -->
+      <div class="flex flex-col items-center md:items-start gap-3">
+        <svg width="28" height="37" viewBox="0 0 64 84" fill="none" style="color:#C9A84C">
+          <path d="M8 3H56Q61 3 61 8V72Q61 81 52 81H12Q3 81 3 72V8Q3 3 8 3Z" stroke="currentColor" stroke-width="2.5"/>
+          <rect x="13" y="22" width="26" height="3" fill="currentColor"/>
+          <polygon points="39,20.5 39,26.5 47,23.5" fill="currentColor"/>
+          <rect x="13" y="36" width="18" height="3" fill="currentColor"/>
+          <polygon points="31,34.5 31,40.5 39,37.5" fill="currentColor"/>
+          <rect x="20" y="50" width="19" height="3" fill="currentColor"/>
+          <polygon points="39,48.5 39,54.5 47,51.5" fill="currentColor"/>
+        </svg>
+        <p class="font-serif font-light text-sm tracking-widest-plus uppercase text-cream">Eduba Press</p>
+        <p class="text-xs text-cream-dim font-sans" style="letter-spacing:0.15em">edubapress.com</p>
+      </div>
+
+      <!-- Footer nav -->
+      <div class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-3">
+        <a href="/about" class="text-xs tracking-widest text-cream-dim hover:text-cream uppercase transition-colors">About</a>
+        <a href="/rights" class="text-xs tracking-widest text-cream-dim hover:text-cream uppercase transition-colors">Rights</a>
+        <a href="/press" class="text-xs tracking-widest text-cream-dim hover:text-cream uppercase transition-colors">Press</a>
+        <a href="/submissions" class="text-xs tracking-widest text-cream-dim hover:text-cream uppercase transition-colors">Submissions</a>
+        <a href="/contact" class="text-xs tracking-widest text-cream-dim hover:text-cream uppercase transition-colors">Contact</a>
+      </div>
+
+    </div>
+    <div class="max-w-5xl mx-auto mt-10 pt-6 border-t border-rule">
+      <p class="text-xs text-cream-dim opacity-40 font-sans" style="letter-spacing:0.1em">© 2026 Eduba Press. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
