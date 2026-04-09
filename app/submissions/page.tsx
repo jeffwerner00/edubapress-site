@@ -6,7 +6,7 @@ const serif = { fontFamily: 'var(--font-cormorant), Georgia, serif' }
 
 export default function SubmissionsPage() {
   return (
-    <main className="px-6 md:px-12 pt-24 pb-36 max-w-2xl">
+    <div className="px-6 md:px-12 pt-24 pb-36 max-w-2xl">
       <p className="text-xs uppercase mb-4 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
         Submissions
       </p>
@@ -51,6 +51,6 @@ export default function SubmissionsPage() {
           Subscribe to our newsletter →
         </Link>
       </div>
-    </main>
+    </div>
   )
 }

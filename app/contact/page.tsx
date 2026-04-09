@@ -42,18 +42,7 @@ export default function ContactPage() {
           </div>
         ))}
 
-        <div>
-          <hr className="section-rule mb-12" />
-          <p className="text-xs uppercase mb-4 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
-            Mailing Address
-          </p>
-          <p
-            className="font-light text-lg"
-            style={{ ...serif, letterSpacing: '0.02em', color: '#C8BC9A' }}
-          >
-            Address to be added.
-          </p>
-        </div>
+
       </section>
 
       <hr className="section-rule" />

@@ -103,30 +103,7 @@ export default function Home() {
               who rule human devotion are at war — and that the most powerful weapon in that war
               is a clay tablet.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#"
-                className="px-7 py-3 text-xs uppercase font-light transition-opacity hover:opacity-90"
-                style={{
-                  letterSpacing: '0.12em',
-                  background: '#B85C38',
-                  color: '#F0E8D6',
-                }}
-              >
-                Order Now
-              </a>
-              <a
-                href="#"
-                className="px-7 py-3 text-xs uppercase font-light transition-colors hover:border-cream"
-                style={{
-                  letterSpacing: '0.12em',
-                  border: '1px solid #2A2520',
-                  color: '#C8BC9A',
-                }}
-              >
-                Learn More
-              </a>
-            </div>
+
           </div>
         </div>
       </section>
@@ -179,30 +156,13 @@ export default function Home() {
         >
           We publish rarely and write only when we have something worth saying.
         </p>
-        <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="Your email address"
-            className="flex-1 px-5 py-3 text-sm font-light placeholder-opacity-50 focus:outline-none transition-colors"
-            style={{
-              background: '#141210',
-              border: '1px solid #2A2520',
-              color: '#F0E8D6',
-              fontFamily: 'var(--font-inter)',
-            }}
-          />
-          <button
-            type="submit"
-            className="px-7 py-3 text-xs uppercase font-light whitespace-nowrap transition-colors hover:opacity-90"
-            style={{
-              letterSpacing: '0.12em',
-              background: '#F0E8D6',
-              color: '#1A1A1A',
-            }}
-          >
-            Subscribe
-          </button>
-        </form>
+        <a
+          href="mailto:info@edubapress.com"
+          className="text-xs uppercase font-light transition-colors"
+          style={{ letterSpacing: '0.12em', color: '#F0E8D6' }}
+        >
+          info@edubapress.com →
+        </a>
       </section>
     </>
   )
