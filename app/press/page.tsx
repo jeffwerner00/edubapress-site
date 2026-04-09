@@ -5,7 +5,7 @@ const serif = { fontFamily: 'var(--font-cormorant), Georgia, serif' }
 export default function PressPage() {
   return (
     <>
-      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl">
+      <header className="px-6 md:px-12 pt-20 pb-14 max-w-3xl mx-auto">
         <p className="text-xs uppercase mb-4 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           Press
         </p>
@@ -20,7 +20,7 @@ export default function PressPage() {
       <hr className="section-rule" />
 
       {/* Media Kit */}
-      <section className="px-6 md:px-12 py-14 max-w-2xl">
+      <section className="px-6 md:px-12 py-14 max-w-2xl mx-auto">
         <p className="text-xs uppercase mb-6 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           Media Kit
         </p>
@@ -51,7 +51,7 @@ export default function PressPage() {
       <hr className="section-rule" />
 
       {/* Coverage */}
-      <section className="px-6 md:px-12 py-14 max-w-2xl">
+      <section className="px-6 md:px-12 py-14 max-w-2xl mx-auto">
         <p className="text-xs uppercase mb-6 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           Coverage
         </p>
@@ -66,7 +66,7 @@ export default function PressPage() {
       <hr className="section-rule" />
 
       {/* Press Inquiries */}
-      <section className="px-6 md:px-12 py-14 max-w-2xl">
+      <section className="px-6 md:px-12 py-14 max-w-2xl mx-auto">
         <p className="text-xs uppercase mb-6 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
           Press Inquiries
         </p>
