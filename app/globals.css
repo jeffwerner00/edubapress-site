@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --warm-dark: #141210;
+  --cream: #F0E8D6;
+  --cream-dim: #C8BC9A;
+  --gold: #C9A84C;
+  --terracotta: #B85C38;
+  --rule: #2A2520;
+  --charcoal: #1A1A1A;
+}
+
+body {
+  background: var(--warm-dark);
+  color: var(--cream);
+}
+
+/* Subtle grain texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+* {
+  position: relative;
+  z-index: 1;
+}
+
+hr.section-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  hr.section-rule {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
