@@ -96,18 +96,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="#"
-                className="px-7 py-3 text-xs uppercase font-light transition-colors"
-                style={{
-                  letterSpacing: '0.12em',
-                  background: '#B85C38',
-                  color: '#F0E8D6',
-                }}
-              >
-                Order Now
-              </a>
-              <a
-                href="#"
+                href="/books/temple-of-transactions"
                 className="px-7 py-3 text-xs uppercase font-light transition-colors"
                 style={{
                   letterSpacing: '0.12em',
