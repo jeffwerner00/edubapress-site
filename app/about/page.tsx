@@ -63,7 +63,7 @@ export default function AboutPage() {
           </p>
           <p>
             Our flagship series,{' '}
-            <em>The Here War</em> by Jeff Werner, spans seventy volumes and five thousand years —
+            <em>The Here War</em> by Jeff Werner, spans five thousand years —
             from the first cities of Sumer to the twentieth century. It is among the most ambitious
             works of historical fiction ever attempted. We are proud to be its publisher.
           </p>

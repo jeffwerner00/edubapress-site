@@ -19,32 +19,25 @@ export default function PressPage() {
 
       <hr className="section-rule" />
 
-      {/* Media Kit */}
+      {/* Press Kit */}
       <section className="px-6 md:px-12 py-14 max-w-2xl mx-auto">
         <p className="text-xs uppercase mb-6 font-light" style={{ letterSpacing: '0.12em', color: '#C9A84C' }}>
-          Media Kit
+          Press Kit
         </p>
         <div
-          className="flex items-center justify-between gap-6 flex-wrap p-8"
+          className="p-8"
           style={{ border: '1px solid #2A2520' }}
         >
-          <div>
-            <p
-              className="font-light text-lg mb-1"
-              style={{ ...serif, letterSpacing: '0.03em', color: '#F0E8D6' }}
-            >
-              Eduba Press Media Kit
-            </p>
-            <p className="text-xs" style={{ letterSpacing: '0.1em', color: '#C8BC9A' }}>
-              Available following Book 1 launch
-            </p>
-          </div>
-          <span
-            className="text-xs uppercase font-light px-5 py-2 cursor-not-allowed opacity-50"
-            style={{ letterSpacing: '0.12em', border: '1px solid #2A2520', color: '#C8BC9A' }}
+          <p
+            className="font-light text-lg mb-3"
+            style={{ ...serif, letterSpacing: '0.03em', color: '#F0E8D6' }}
           >
-            Download PDF
-          </span>
+            Press Kit
+          </p>
+          <p className="text-xs" style={{ letterSpacing: '0.1em', color: '#C8BC9A' }}>
+            Available on request.{' '}Contact{' '}
+            <a href="mailto:press@edubapress.com" style={{ color: '#C9A84C' }}>press@edubapress.com</a>.
+          </p>
         </div>
       </section>
 

@@ -6,7 +6,7 @@ const RIGHTS_SECTIONS = [
   {
     title: 'Foreign Rights',
     body: 'We are actively seeking international publishing partners for The Here War series. The series is available for translation and co-publication in all territories.',
-    email: 'rights@edubapress.com',
+    email: 'foreign@edubapress.com',
   },
   {
     title: 'Film & Television',
@@ -16,12 +16,12 @@ const RIGHTS_SECTIONS = [
   {
     title: 'Audio Rights',
     body: 'Audiobook rights inquiries are welcome.',
-    email: 'rights@edubapress.com',
+    email: 'audio@edubapress.com',
   },
   {
     title: 'All Other Inquiries',
     body: 'For permissions, excerpts, educational licensing, and other rights questions, please contact us at the address above. We respond to all serious inquiries.',
-    email: 'rights@edubapress.com',
+    email: 'info@edubapress.com',
   },
 ]
 

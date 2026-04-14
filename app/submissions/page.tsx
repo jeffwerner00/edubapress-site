@@ -33,7 +33,7 @@ export default function SubmissionsPage() {
         style={{ ...serif, letterSpacing: '0.01em', color: '#C8BC9A' }}
       >
         <p>
-          When we open submissions, we will be looking for historical fiction that operates at
+          When we reopen submissions, we will be looking for historical fiction that operates at
           civilizational scale — work that earns its scope, takes the past seriously as drama, and
           reaches back far enough to matter. Subscribe to our newsletter to be notified when that
           changes.
